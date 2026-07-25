@@ -129,7 +129,6 @@ Set electoral threshold to 40%.
 - @editindustrialist: Edit Industrialist Faction of DVP
 - @editlabor: Edit Labor Faction of DVP
 - @editliberal: Edit Liberal Faction of DVP
-- @editneorevisionist: Edit Neorevisionist Faction of DVP
 - @returnsandbox: Return To Sandbox
 
 @editresources
@@ -535,72 +534,72 @@ Removed all nationalist strength.
 - @add5industrialiststrength: Add 5 Industrialist Strength
 - @100industrialiststrength: Maximum industrialist Strength
 - @subtract5industrialiststrength: Remove 5 Industrialist Strength
-- @removecenterstrength: Remove Center Strength
+- @removeindustrialiststrength: Remove Industrialist Strength
 - @returnsandbox: Return To Sandbox Menu
 
-@add5centerdissent
-go-to: editcenter
+@add5industrialistdissent
+go-to: editindustrialist
 on-arrival: {!
-Q.center_dissent += 5;
+Q.industrialist_dissent += 5;
 !}
 
-Added 5 center dissent.
+Added 5 industrialist dissent.
 
-@100centerdissent
-go-to: editcenter
+@100industrialistdissent
+go-to: editindustrialist
 on-arrival: {!
-Q.center_dissent = 100;
+Q.industrialist_dissent = 100;
 !}
 
-Maximised center dissent.
+Maximised industrialist dissent.
 
-@subtract5centerdissent
-go-to: editcenter
+@subtract5industrialistdissent
+go-to: editindustrialist
 on-arrival: {!
-Q.center_dissent -= 5;
+Q.industrialist_dissent -= 5;
 !}
 
-Reduced center dissent by 5.
+Reduced industrialist dissent by 5.
 
-@removecenterdissent
+@removeindustrialistdissent
 go-to: editcenter
 on-arrival: {!
-Q.center_dissent = 0;
+Q.industrialist_dissent = 0;
 !}
 
-Removed all center dissent.
+Removed all industrialist dissent.
 
-@add5centerstrength
-go-to: editcenter
+@add5industrialiststrength
+go-to: editindustrialist
 on-arrival: {!
-Q.center_strength += 5;
+Q.industrialist_strength += 5;
 !}
 
-Added 5 center strength.
+Added 5 industrialist strength.
 
-@100centerstrength
-go-to: editcenter
+@100industrialiststrength
+go-to: editindustrialist
 on-arrival: {!
-Q.center_strength = 100;
+Q.industrialist_strength = 100;
 !}
 
-Maximised center strength.
+Maximised industrialist strength.
 
-@subtract5centerstrength
-go-to: editcenter
+@subtract5industrialiststrength
+go-to: editindustrialist
 on-arrival: {!
-Q.center_strength -= 5;
+Q.industrialist_strength -= 5;
 !}
 
-Reduced center strength by 5.
+Reduced industrialist strength by 5.
 
-@removecenterstrength
-go-to: editcenter
+@removeindustrialiststrength
+go-to: editindustrialist
 on-arrival: {!
-Q.center_strength = 0;
+Q.industrialist_strength = 0;
 !}
 
-Removed all center strength.
+Removed all industrialist strength.
 
 @editlabor
 
@@ -678,204 +677,82 @@ Q.labor_strength = 0;
 
 Removed all labor strength.
 
-@editreformist
+@editliberal
 
-- @add5reformistdissent: Add 5 Reformist Dissent
-- @100reformistdissent: Maximum Reformist Dissent
-- @subtract5reformistdissent: Remove 5 Reformist Dissent
-- @removereformistdissent: Remove All Reformist Dissent
-- @add5reformiststrength: Add 5 Reformist Strength
-- @100reformiststrength: Maximum Reformist Strength
-- @subtract5reformiststrength: Remove 5 Reformist Strength
-- @removereformiststrength: Remove Reformist Strength
+- @add5liberaldissent: Add 5 Liberal Dissent
+- @100liberaldissent: Maximum Liberal Dissent
+- @subtract5liberaldissent: Remove 5 Liberal Dissent
+- @removeliberaldissent: Remove All Liberal Dissent
+- @add5liberalstrength: Add 5 Liberal Strength
+- @100liberalstrength: Maximum Liberal Strength
+- @subtract5liberalstrength: Remove 5 Liberal Strength
+- @removeliberalstrength: Remove Liberal Strength
 - @returnsandbox: Return To Sandbox Menu
 
-@add5reformistdissent
-go-to: editreformist
+@add5liberaldissent
+go-to: editliberal
 on-arrival: {!
-Q.reformist_dissent += 5;
+Q.liberal_dissent += 5;
 !}
 
-Added 5 reformist dissent.
+Added 5 liberal dissent.
 
-@100reformistdissent
-go-to: editreformist
+@100liberaldissent
+go-to: editliberal
 on-arrival: {!
-Q.reformist_dissent = 100;
+Q.liberal_dissent = 100;
 !}
 
-Maximised reformist dissent.
+Maximised liberal dissent.
 
-@subtract5reformistdissent
-go-to: editreformist
+@subtract5liberaldissent
+go-to: editliberal
 on-arrival: {!
-Q.reformist_dissent -= 5;
+Q.liberal_dissent -= 5;
 !}
 
-Reduced reformist dissent by 5.
+Reduced liberal dissent by 5.
 
-@removereformistdissent
-go-to: editreformist
+@removeliberaldissent
+go-to: editliberal
 on-arrival: {!
-Q.reformist_dissent = 0;
+Q.liberal_dissent = 0;
 !}
 
-Removed all reformist dissent.
+Removed all liberal dissent.
 
-@add5reformiststrength
-go-to: editreformist
+@add5liberalstrength
+go-to: editliberal
 on-arrival: {!
-Q.reformist_strength += 5;
+Q.liberal_strength += 5;
 !}
 
-Added 5 reformist strength.
+Added 5 liberal strength.
 
-@100reformiststrength
-go-to: editreformist
+@100liberalstrength
+go-to: editliberal
 on-arrival: {!
-Q.reformist_strength = 100;
+Q.liberal_strength = 100;
 !}
 
-Maximised reformist strength.
+Maximised liberal strength.
 
-@subtract5reformiststrength
-go-to: editreformist
+@subtract5liberalstrength
+go-to: editliberal
 on-arrival: {!
-Q.reformist_strength -= 5;
+Q.liberal_strength -= 5;
 !}
 
-Reduced reformist strength by 5.
+Reduced liberal strength by 5.
 
-@removereformiststrength
-go-to: editreformist
+@removeliberalstrength
+go-to: editliberal
 on-arrival: {!
-Q.reformist_strength = 0;
+Q.liberal_strength = 0;
 !}
 
-Removed all reformist strength.
-
-@editneorevisionist
-
-- @discoverneorevisionism: Discover Neorevisionism
-- @add5neorevisionistdissent: Add 5 Neorevisionist Dissent
-- @100neorevisionistdissent: Maximum Neorevisionist Dissent
-- @subtract5neorevisionistdissent: Remove 5 Neorevisionist Dissent
-- @removeneorevisionistdissent: Remove All Neorevisionist Dissent
-- @add5neorevisioniststrength: Add 5 Neorevisionist Strength
-- @100neorevisioniststrength: Maximum Neorevisionist Strength
-- @subtract5neorevisioniststrength: Remove 5 Neorevisionist Strength
-- @removeneorevisioniststrength: Remove Neorevisionist Strength
-- @returnsandbox: Return To Sandbox Menu
-
-@discoverneorevisionism
-go-to: editneorevisionist
-view-if: neorevisionism == 0
-on-arrival: {!
-Q.neorevisionism = 1;
-!}
-
-@add5neorevisionistdissent
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_dissent += 5;
-!}
-
-Added 5 neorevisionist dissent.
-
-@100neorevisionistdissent
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_dissent = 100;
-!}
-
-Maximised neorevisionist dissent.
-
-@subtract5neorevisionistdissent
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_dissent -= 5;
-!}
-
-Reduced neorevisionist dissent by 5.
-
-@removeneorevisionistdissent
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_dissent = 0;
-!}
-
-Removed all neorevisionist dissent.
-
-@add5neorevisioniststrength
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_strength += 5;
-!}
-
-Added 5 neorevisionist strength.
-
-@100neorevisioniststrength
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_strength = 100;
-!}
-
-Maximised neorevisionist strength.
-
-@subtract5neorevisioniststrength
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_strength -= 5;
-!}
-
-Reduced neorevisionist strength by 5.
-
-@removeneorevisioniststrength
-go-to: editneorevisionist
-on-arrival: {!
-Q.neorevisionist_strength = 0;
-!}
-
-Removed all neorevisionist strength.
-
-@returnsandbox
-go-to: sandbox_menu
-
-@editironfront
-
-- @formironfront: Form The Iron Front
-- @raiseurgency: Raise Urgency Against Nazis
-- @lowerurgency: Lower Urgency Against Nazis
-- @returnsandbox: Return To Sandbox Menu
-
-@formironfront
-go-to: editironfront
-view-if: iron_front_formed = 0
-on-arrival: {!
-Q.iron_front_formed = 1;
-!}
-achievement: eiserne_front
-
-Iron Front has been formed.
-
-@raiseurgency
-go-to: editironfront
-on-arrival: {!
-nazi_urgency += 1;
-!}
-
-Raised nazi urgency.
-
-@lowerurgency
-go-to: editironfront
-on-arrival: {!
-nazi_urgency -= 1;
-!}
-
-Lowered nazi urgency.
-
+Removed all liberal strength.
 @editparamilitary
-
 - @raiserbstrength: Raise Reichsbanner Strength
 - @lowerrbstrength: Lower Reichsbanner Strength
 - @raiserbmilitancy: Raise Reichsbanner Militancy
