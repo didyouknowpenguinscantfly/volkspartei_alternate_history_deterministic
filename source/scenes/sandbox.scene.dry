@@ -17,7 +17,6 @@ go-to: sandbox_menu
 - @editeconomy: Edit Economy
 - @editrelations: Edit Party Relations & Coalition Dissent
 - @editpartysupport: Edit Party Support
-- @editelectoral: Edit Electoral Threshold
 - @editfactions: Edit DVP Factions
 - @miscparty: Miscellaneous Party Options
 - @editparamilitary: Edit Paramilitary Groups
@@ -58,70 +57,6 @@ Q.advisor_action_timer = 0;
 !}
 
 Made advisor actions available.
-
-@editelectoral
-
-- @electoral0: Set Electoral Threshold to 0% (Default)
-- @electoral5: Set Electoral Threshold to 5%
-- @electoral10: Set Electoral Threshold to 10%
-- @electoral20: Set Electoral Threshold to 20%
-- @electoral40: Set Electoral Threshold to 40%
-- @returnsandbox: Return To Sandbox
-
-@electoral0
-go-to: sandbox_menu
-on-arrival: {!
-Q.electoral_threshold = 0;
-if (Q.constitutional_reform < 1) {
-    Q.constitutional_reform = 1;
-};
-!}
-
-Set electoral threshold to 0%.
-
-@electoral5
-go-to: sandbox_menu
-on-arrival: {!
-Q.electoral_threshold = 5;
-if (Q.constitutional_reform < 1) {
-    Q.constitutional_reform = 1;
-};
-!}
-
-Set electoral threshold to 5%.
-
-@electoral10
-go-to: sandbox_menu
-on-arrival: {!
-Q.electoral_threshold = 10;
-if (Q.constitutional_reform < 1) {
-    Q.constitutional_reform = 1;
-};
-!}
-
-Set electoral threshold to 10%.
-
-@electoral20
-go-to: sandbox_menu
-on-arrival: {!
-Q.electoral_threshold = 20;
-if (Q.constitutional_reform < 1) {
-    Q.constitutional_reform = 1;
-};
-!}
-
-Set electoral threshold to 20%.
-
-@electoral40
-go-to: sandbox_menu
-on-arrival: {!
-Q.electoral_threshold = 40;
-if (Q.constitutional_reform < 1) {
-    Q.constitutional_reform = 1;
-};
-!}
-
-Set electoral threshold to 40%.
 
 @editfactions
 
