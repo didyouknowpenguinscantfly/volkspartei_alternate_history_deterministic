@@ -1035,15 +1035,6 @@ Lowered Interior Police loyalty.
 - @unban_kpd: Unban KPD
 - @ban_nsdap: Ban NSDAP
 - @unban_nsdap: Unban NSDAP
-
-@sapd_formed
-go-to: miscparty
-on-arrival: {!
-Q.sapd_formed = 1;
-!}
-
-The SAPD has been formed.
-
 - @sapd_formed: Form SAPD
 - @sandbox_menu: Return To Sandbox Menu
 
@@ -1091,6 +1082,14 @@ Q.nsdap_banned = 0;
 !}
 
 Unbanned the NSDAP.
+
+@sapd_formed
+go-to: miscparty
+on-arrival: {!
+Q.sapd_formed = 1;
+!}
+
+The SAPD has been formed
 
 @editpartysupport
 
