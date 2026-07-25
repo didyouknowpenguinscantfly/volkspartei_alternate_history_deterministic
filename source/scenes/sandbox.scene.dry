@@ -18,9 +18,8 @@ go-to: sandbox_menu
 - @editrelations: Edit Party Relations & Coalition Dissent
 - @editpartysupport: Edit Party Support
 - @editelectoral: Edit Electoral Threshold
-- @editfactions: Edit SPD Factions
+- @editfactions: Edit DVP Factions
 - @miscparty: Miscellaneous Party Options
-- @editironfront: Edit Iron Front
 - @editparamilitary: Edit Paramilitary Groups
 - @editreichswehr: Edit Reichswehr and Police
 - @backSpecialScene: Exit Sandbox Menu
@@ -126,11 +125,11 @@ Set electoral threshold to 40%.
 
 @editfactions
 
-- @editleft: Edit Left Faction Of SPD
-- @editcenter: Edit Center Faction of SPD
-- @editlabor: Edit Labor Faction of SPD
-- @editreformist: Edit Reformist Faction of SPD
-- @editneorevisionist: Edit Neorevisionist Faction of SPD
+- @editnationalist: Edit Nationalist Faction Of DVP
+- @editindustrialist: Edit Industrialist Faction of DVP
+- @editlabor: Edit Labor Faction of DVP
+- @editliberal: Edit Liberal Faction of DVP
+- @editneorevisionist: Edit Neorevisionist Faction of DVP
 - @returnsandbox: Return To Sandbox
 
 @editresources
@@ -333,8 +332,8 @@ Decreased science by 1.
 - @decreasekpdrel: Decrease Relations With The KPD
 - @increaseddprel: Increase Relations With The DDP/DStP
 - @decreaseddprel: Decrease Relations With The DDP/DStP
-- @increasedvprel: Increase Relations With The DVP
-- @decreasedvprel: Decrease Relations With The DVP
+- @increasespdrel: Increase Relations With The SPD
+- @decreasespdrel: Decrease Relations With The SPD
 - @removedissent: Remove Coalition Dissent
 - @maxdissent: Maximise Coalition Dissent
 - @returnsandbox: Return To Sandbox Menu
@@ -406,18 +405,18 @@ Decreased relations with the DDP.
 @increasedvprel
 go-to: editrelations
 on-arrival: {!
-Q.dvp_relation += 15;
+Q.spd_relation += 15;
 !}
 
-Increased relations with the DVP.
+Increased relations with the SPD.
 
 @decreasedvprel
 go-to: editrelations
 on-arrival: {!
-Q.dvp_relation -= 15;
+Q.spd_relation -= 15;
 !}
 
-Decreased relations with the DVP.
+Decreased relations with the SPD.
 
 @increasednvprel
 go-to: editrelations
@@ -453,89 +452,89 @@ Decreased relations with the NSDAP.
 
 @editleft
 
-- @add5leftdissent: Add 5 Left Dissent
-- @100leftdissent: Maximum Left Dissent
-- @subtract5leftdissent: Remove 5 Left Dissent
-- @removeleftdissent: Remove All Left Dissent
-- @add5leftstrength: Add 5 Left Strength
-- @100leftstrength: Maximum Left Strength
-- @subtract5leftstrength: Remove 5 Left Strength
-- @removeleftstrength: Remove Left Strength
+- @add5nationalistdissent: Add 5 Nationalist Dissent
+- @100nationalistdissent: Maximum Nationalist Dissent
+- @subtract5nationalistdissent: Remove 5 Nationalist Dissent
+- @removenationalistdissent: Remove All Nationalist Dissent
+- @add5nationaliststrength: Add 5 Nationalist Strength
+- @100nationaliststrength: Maximum Nationalist Strength
+- @subtract5nationaliststrength: Remove 5 Nationalist Strength
+- @removenationaliststrength: Remove Nationalist Strength
 - @returnsandbox: Return To Sandbox Menu
 
-@add5leftdissent
-go-to: editleft
+@add5nationalistdissent
+go-to: editnationalist
 on-arrival: {!
-Q.left_dissent += 5;
+Q.nationalist_dissent += 5;
 !}
 
-Added 5 left dissent.
+Added 5 nationalist dissent.
 
-@100leftdissent
-go-to: editleft
+@100nationalistdissent
+go-to: editnationalist
 on-arrival: {!
-Q.left_dissent = 100;
+Q.nationalist_dissent = 100;
 !}
 
-Maximised left dissent.
+Maximised nationalist dissent.
 
-@subtract5leftdissent
-go-to: editleft
+@subtract5nationalistdissent
+go-to: editnationalist
 on-arrival: {!
-Q.left_dissent -= 5;
+Q.nationalist_dissent -= 5;
 !}
 
-Reduced left dissent by 5.
+Reduced nationalist dissent by 5.
 
-@removeleftdissent
-go-to: editleft
+@removenationalistdissent
+go-to: editnationalist
 on-arrival: {!
-Q.left_dissent = 0;
+Q.nationalist_dissent = 0;
 !}
 
-Removed all left dissent.
+Removed all nationalist dissent.
 
-@add5leftstrength
-go-to: editleft
+@add5nationaliststrength
+go-to: editnationalist
 on-arrival: {!
-Q.left_strength += 5;
+Q.nationalist_strength += 5;
 !}
 
-Added 5 left strength.
+Added 5 nationalist strength.
 
-@100leftstrength
-go-to: editleft
+@100nationaliststrength
+go-to: editnationalist
 on-arrival: {!
-Q.left_strength = 100;
+Q.nationalist_strength = 100;
 !}
 
-Maximised left strength.
+Maximised nationalist strength.
 
-@subtract5leftstrength
-go-to: editleft
+@subtract5nationaliststrength
+go-to: editnationalist
 on-arrival: {!
-Q.left_strength -= 5;
+Q.nationalist_strength -= 5;
 !}
 
-Reduced left strength by 5.
+Reduced nationalist strength by 5.
 
-@removeleftstrength
-go-to: editleft
+@removenationaliststrength
+go-to: editnationalist
 on-arrival: {!
-Q.left_strength = 0;
+Q.nationalist_strength = 0;
 !}
 
-Removed all left strength.
+Removed all nationalist strength.
 
 @editcenter
 
-- @add5centerdissent: Add 5 Center Dissent
-- @100centerdissent: Maximum Center Dissent
-- @subtract5centerdissent: Remove 5 Center Dissent
-- @removecenterdissent: Remove All Center Dissent
-- @add5centerstrength: Add 5 Center Strength
-- @100centerstrength: Maximum Center Strength
-- @subtract5centerstrength: Remove 5 Center Strength
+- @add5industrialistdissent: Add 5 Industrialist Dissent
+- @100industrialistdissent: Maximum Industrialist Dissent
+- @subtract5industrialistdissent: Remove 5 Industrialist Dissent
+- @removeindustrialistdissent: Remove All Industrialist Dissent
+- @add5industrialiststrength: Add 5 Industrialist Strength
+- @100industrialiststrength: Maximum industrialist Strength
+- @subtract5industrialiststrength: Remove 5 Industrialist Strength
 - @removecenterstrength: Remove Center Strength
 - @returnsandbox: Return To Sandbox Menu
 
