@@ -752,7 +752,9 @@ Q.liberal_strength = 0;
 !}
 
 Removed all liberal strength.
+
 @editparamilitary
+
 - @raiserbstrength: Raise Reichsbanner Strength
 - @lowerrbstrength: Lower Reichsbanner Strength
 - @raiserbmilitancy: Raise Reichsbanner Militancy
